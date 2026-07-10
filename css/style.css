@@ -27,6 +27,7 @@
   font-style: normal;
 }
 
+/*home*/
 .header {
   min-height: 100vh;
   min-width: 100%;
@@ -65,25 +66,68 @@
   font-weight: bold;
 }
 
-.text{
+.text {
   width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.text h1{
-  font-family:"IBM Plex Serif", serif;
+.text h1 {
+  font-family: "IBM Plex Serif", serif;
   font-size: 120px;
 }
-.text h2{
-  font-family:"Google Sans", sans-serif ;
+
+.text h2 {
+  font-family: "Google Sans", sans-serif;
   font-size: 32px;
   font-weight: lighter;
 }
-.text p{
-  font-family:"IBM Plex Serif", serif ;
+
+.text p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 24px;
+}
+
+/*about*/
+
+.about {
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: ;
+  background-size: cover;
+}
+
+.about-content{
+  display:flex;
+}
+
+.about-image {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 1.6rem;
+}
+.about-image img{
+  height: 100%;
+}
+.line{
+  margin-left: 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 1.6rem;
+}
+
+.line h2{
+  font-family: "Google Sans", sans-serif;
+  font-size: 48px;
+}
+.line p{
+  font-family: "IBM Plex Serif", serif;
   font-size: 24px;
 }
