@@ -112,7 +112,7 @@ justify-content: center;
 gap: 1.6rem;
 }
 .about-image img{
-  height: 100%;
+  max-height: 100vh;
 }
 .line{
   margin-left: 20px;
@@ -130,4 +130,35 @@ gap: 1.6rem;
 .line p{
   font-family: "IBM Plex Serif", serif;
   font-size: 24px;
+}
+
+/*portfolio*/
+
+.portfolio{
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: ;
+  background-size: cover;
+}
+
+.portfolio h1{
+  
+  margin-top:50px;
+  font-size: 48px;
+  font-family:"Google Sans", sans-serif ;
+}
+.gallery{
+    display:grid;
+    /* 4 columns */
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img{
+    width:95%;
+    height:auto;
+    object-fit:fill;
+    border-radius: 90% , 90%;
 }
