@@ -137,7 +137,7 @@
 }
 
 .line {
-  margin-left: 20px;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -146,15 +146,64 @@
 }
 
 .line h2 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Google Sans", sans-serif;
   font-size: 48px;
 }
 
 .line p {
-  font-family: "Google Sans", sans-serif;
+  font-family:"IBM Plex Serif", serif ;
   font-size: 24px;
 }
 
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
 /*-------------------------------------------------portfolio-------------------------------------------------*/
 
 .portfolio {
@@ -196,11 +245,30 @@
 .service {
   min-height: 100vh;
   min-width: 100%;
-  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  min-width: 98%;
+  border-radius: 20px;
+  border-color: white;
+  overflow: hidden;
+  margin: 1%;
 }
 
-.text2 h1 {
+.Stext{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+
+}
+
+.Stext h1 {
   font-family: "IBM Plex Serif", serif;
   font-size: 48px;
+  text-align: center;
+}
+
+.Stext h2 {
+  font-family: "Google Sans", sans-serif;
+  font-size: 24px;
   text-align: center;
 }
